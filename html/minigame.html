@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="icon" type="" href="../Image/Logo.png"/>
+    <link rel="stylesheet" href="../Css/minigame.css">
+    <link rel="stylesheet" href="../Js/minigame.js">
+
+    <title>Minigame</title>
+</head>
+<body>
+    <header>
+        
+        <div class="center">
+            <div class="logo"><img class="logo" src="../Image/Logo.png" alt=""></div> <!--logo-->
+            <div class="menu">
+                <nav><div class="logo-text">Club do Cafe</div>
+                
+                <ul class="nav-list" > <!--menu -->
+                <li><a href="/html/Inicio.html">Inicio</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./minigame.html">Minigame</a></li>
+                <li><a href="/html/biblioteca.html">Biblioteca</a></li>
+                <li><a href="/"></a></li>
+              </ul>
+            </nav>
+            </div><!--menu fim-->
+        </div><!--Center-->
+    </header>
+    <div class="sobre">
+        <div class="extras">
+            <img class="copodecafe" src="./Image/Copodecafe.png" alt=""/><!--copo de cafe-->
+            <div class="social-media">
+                <a href="https://github.com/Gonikibo"><img  class="icon-github" src="../Image/Icon-github.png" alt=""/></a>
+                <a href="https://discord.gg/q5GJY5x2Gh"><img class="icon-discord" src="../Image/Icon-discord.png" alt=""/></a>
+                <a href="https://www.instagram.com/jadson_goni/"><img class="icon-instagram" src="../Image/Icon-instagram.png" alt=""/></a>
+                <a href=""><img class="icon-telegram" src="../Image/Icon-telegram.png" alt=""/></a>
+            </div>
+        </div> <!--extras-->
+    </div>
+    <br>
+  <div>
+    <main class="tela-principal">
+
+        <section class='conteudos'>
+
+            <div>
+                <div class="box-text">
+                    <div class="imgBx">
+                        <img src="../Image/Robo.png" alt="">
+                    </div>
+                    <div class="content-text">
+                        <h2>Quiz</h2>
+                        <p>Vamos testar todo seu conhecimento, sobre o curso.</p>
+                    </div>
+                </div> 
+              </div>
+              <br><br>
+              <main>
+                    <article class='questoes'>
+                        
+                        <figure class='imagemDaQuestao'>
+                            <img src="" alt="Img da questao" width="200px"/>
+                        </figure>   
+        
+                        <header class='questao'>
+                            <span id='numQuestao'></span>
+                            <h2 id='pergunta'></h2>
+                        </header>
+                                        
+                        <div class='corpo'>
+                            <ol type='' id='alternativas'>
+                                <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                                <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                                <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                                <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            </ol>
+                        </div>
+                    </article>
+                    
+                    <article id='aviso' class='centro'>
+                        <input type="range" value='1' min='1' max='10' step='1'
+                        name="progresso" id="progresso" disabled
+                        /> <br>
+                        <span id='numero'></span> de <span id='total'></span>
+                    </article>
+                
+               
+        
+                </section>
+        
+            </main>
+<audio preload src="assets/positive.mp3" id='somAcerto'></audio>
+<audio preload src="assets/negative.mp3" id='somErro'></audio>
+<audio preload src="assets/aplausos.mp3" id='somAplausos'></audio>
+<!-- JS externo -->
+<script src="../Js/minigame.js"></script>
+  
+          
+    </div>   
+    <br>
+    <!-- Rodapé-->
+</body>
+</html>
